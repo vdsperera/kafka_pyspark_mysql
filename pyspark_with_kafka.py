@@ -4,7 +4,7 @@ from pyspark.sql.functions import *
 import time
 
 kafka_bootstrap_servers = "localhost:9092"
-kafka_topic_name = "ordersTopic"
+kafka_topic_name = "orders_topic"
 customers_data_file_path = "file:////mnt/92D26AE0D26AC7D5/Python/chamath_kafka_with_pyspark/data_source/customers.csv"
 mysql_driver_class = "com.mysql.jdbc.Driver"
 mysql_table_name = "total_sales_by_source_state"
