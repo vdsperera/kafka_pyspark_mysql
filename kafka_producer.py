@@ -13,7 +13,7 @@ if __name__ == "__main__":
     kafka_producer_obj = KafkaProducer(bootstrap_servers=KAFKA_BOOTSTRAP_SERVERS_CONS,
                                        value_serializer=lambda x: dumps(x).encode('utf-8'))
 
-    file_path = "data_source/orders.csv"
+    file_path = "data_sources/orders.csv"
 
     orders_pd_df = pd.read_csv(file_path)
 
